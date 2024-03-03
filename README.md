@@ -14,3 +14,8 @@ export DISPLAY=:0
 ```sh
 python rpi_touch_showroom/__main__.py
 ```
+## Run inside Docker
+```sh
+xhost +	# Allow the X server to accept connections from the Raspberry Pi
+docker compose up --build
+```
